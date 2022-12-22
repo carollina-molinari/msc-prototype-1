@@ -44,28 +44,12 @@ lower_content = Frame(root, width=875, height=240, bg="thistle")
 lower_content.grid(columnspan=3,rowspan=2,row=4)
 
 # Wine logo
-logo_wine = Image.open('wine_rgb.png')
+logo_wine = Image.open('wine_rgb.png'). #you can add your own image here
 logo_wine = logo_wine.resize((50,50))
 logo_wine = ImageTk.PhotoImage(logo_wine)
 logo_wine_label = tk.Label(image=logo_wine)
 logo_wine_label.image = logo_wine
 logo_wine_label.place(x=10, y=10)
-
-# PPGQ logo
-#logo_ppgq = Image.open('logo_ppgq.jpg')
-#logo_ppgq = logo_ppgq.resize((50,50))
-#logo_ppgq = ImageTk.PhotoImage(logo_ppgq)
-#logo_ppgq_label = tk.Label(image=logo_ppgq)
-#logo_ppgq_label.image = logo_ppgq
-#logo_ppgq_label.place(x=275, y=0)          
-
-    # UFPR logo
-#logo_ufpr = Image.open('logo_ufpr.jpg')
-#logo_ufpr = logo_ufpr.resize((50,50))
-#logo_ufpr = ImageTk.PhotoImage(logo_ufpr)
-#logo_ufpr_label = tk.Label(image=logo_ufpr)
-#logo_ufpr_label.image = logo_ufpr
-#logo_ufpr_label.place(x=0, y=0)
 
 # First instructions        
 instructions = tk.Label(root, text="Nome da análise (uva-ano-id): ", font="Realway")
